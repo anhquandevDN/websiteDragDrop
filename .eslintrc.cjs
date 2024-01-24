@@ -22,14 +22,14 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     'react/prop-types': 0,
     'react/display-name': 0,
-    //  MUI
+    //  MUI (không được import quá 3)
     'no-restricted-imports': [
       'error',
       {
         'patterns': ['@mui/*/*/*']
       }
     ],
-    // Common
+    // Common (chung)
     'no-console': 1,
     'no-lonely-if': 1,
     'no-unused-vars': 1, //tạo biến ra nhưng không dùng
