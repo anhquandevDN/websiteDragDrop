@@ -31,6 +31,7 @@ module.exports = {
     ],
     // Common (chung)
     'no-console': 1,
+    'no-extra-boolean-cast': 0, //vừa thấy khi code (thuật toán phát hiện va chạm sẽ trả về một mảng va chạm ở đây)
     'no-lonely-if': 1,
     'no-unused-vars': 1, //tạo biến ra nhưng không dùng
     'no-trailing-spaces': 1,
