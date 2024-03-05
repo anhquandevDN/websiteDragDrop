@@ -46,6 +46,7 @@ function Column({ column }) {
     setAnchorEl(null)
   }
   const orderedCards = mapOrder(column?.cards, column?.cardOrderIds, '_id')
+
   return (
     //bọc thẻ div để sau giải quyết được vấn đề nhấp nháy (flickering)
     <div ref={setNodeRef} style={dndKitColumnStyles} {...attributes} >
@@ -58,7 +59,7 @@ function Column({ column }) {
           borderRadius: '6px',
           height: 'fit-content',
           maxHeight: (theme) => `calc(${theme.trello.boardContentHeight} 
-      - ${theme.spacing(5)})`
+        - ${theme.spacing(5)})`
 
         }}>
         {/* Box Column Header */}

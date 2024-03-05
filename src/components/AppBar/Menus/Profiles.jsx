@@ -34,7 +34,7 @@ function Profiles() {
           <Avatar
             sx={{ width: 36, height: 36 }}
             alt="anhquandev"
-            src="https://scontent.fdad5-1.fna.fbcdn.net/v/t39.30808-6/375450456_3583115078682024_1919034679322933723_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeEMJXOdh2kIb9sC88pcyn6rJRCWJa8rBcUlEJYlrysFxbirxgtQ59cdmOerb66X6MDTw2EYnZdeCV3rE6_tA6ix&_nc_ohc=YY8HzJPH7GoAX9maasn&_nc_ht=scontent.fdad5-1.fna&oh=00_AfDWsnfeT4qo8hfADEJbn6CvHZTsXfoW6ZJP20e8sAsl_g&oe=65D58597"
+            src="http://bugnetproject.com/wp-content/uploads/2020/07/trello.jpg"
           />
         </IconButton>
       </Tooltip>

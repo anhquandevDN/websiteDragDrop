@@ -110,32 +110,7 @@ function BoardBar({ board }) {
           <Tooltip title="lép khóc nhè">
             <Avatar
               alt="anhquandev"
-              src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.15752-9/428473309_1095394688328368_4714488073722905046_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=A5dkfNWCj8sAX9YexEM&_nc_ht=scontent.fdad5-1.fna&oh=03_AdTwwyanxlOn4EEqElxagq7GKKVPtbtARzs2o70KXbLeMQ&oe=65FE7C1E" />
-          </Tooltip>
-          <Tooltip title="tuấn & anh Đạt">
-            <Avatar
-              alt="anhquandev"
-              src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.15752-9/423221224_925155585499451_2192999519311528668_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=xEbEo5so46MAX_yF4nl&_nc_ht=scontent.fdad5-1.fna&oh=03_AdQDG2xuhAit0anV-QJr89nrk0c2m3JcXF0F89qYDii1ZQ&oe=65FE911D" />
-          </Tooltip>
-          <Tooltip title="c nguyên">
-            <Avatar
-              alt="chị nguyên"
-              src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.15752-9/412030485_6710318065743830_8340793440058215954_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=8G01cHP6Dx4AX_4M8fM&_nc_ht=scontent.fdad5-1.fna&oh=03_AdQYuTgC3NUeBwtruMbjthFAkuStNuEW3iRTNto1pPpDhg&oe=65FE6392" />
-          </Tooltip>
-          <Tooltip title="nhung đù">
-            <Avatar
-              alt="nhung đù"
-              src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.15752-9/373036094_297648009865795_1918963403770314063_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=Rg1yaYJLE4IAX8JqpDt&_nc_ht=scontent.fdad5-1.fna&oh=03_AdSdjzkXwFx9--veH1zPmH6veJyFYkE18ymFm3eGWz2gbQ&oe=65FE884C" />
-          </Tooltip>
-          <Tooltip title="đội trưởng Tam Hải">
-            <Avatar
-              alt="nhung đù"
-              src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.15752-9/365332787_1209723886360672_4369286047175994678_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8cd0a2&_nc_ohc=awFrgPhdwpEAX8FFNLq&_nc_oc=AQkU_vBL0LqCR7izRPhTkAgFCjEGhW5d3lBM_CA_O1wWwiSP4WmwNQoRZ2E2lskubX8&_nc_ht=scontent.fdad5-1.fna&oh=03_AdQXosPscj6_gCekjtgCvh2AotCrFLpismMmqcRcr8tbng&oe=65FE7674" />
-          </Tooltip>
-          <Tooltip title="bạn Ghi">
-            <Avatar
-              alt="nhung đù"
-              src="https://scontent.fdad5-1.fna.fbcdn.net/v/t1.6435-9/53429792_509066742833312_5572108527641559040_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=7a1959&_nc_ohc=oVtskiFE9SYAX_NsP_d&_nc_ht=scontent.fdad5-1.fna&oh=00_AfB45Cx_XwQCbXxLKz_R5I78EkH6elivls5bPUNU6YDnFg&oe=65FE9049" />
+              src="http://bugnetproject.com/wp-content/uploads/2020/07/trello.jpg" />
           </Tooltip>
         </AvatarGroup>
       </Box>
