@@ -16,7 +16,7 @@ function ListCards({ cards }) {
           `calc(${theme.trello.boardContentHeight} - ${theme.spacing(5)} 
       - ${theme.trello.columnHeaderHeight} 
       - ${theme.trello.columnFooterHeight}
-    )`,
+          )`,
         '&::-webkit-scrollbar-thumb': {
           background: '#ced0da'
         },
