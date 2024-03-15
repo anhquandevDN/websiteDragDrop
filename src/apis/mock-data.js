@@ -1,6 +1,6 @@
 export const mockData = {
   board: {
-    _id: 'board-id-01',
+    _id: 'board-id-01', //
     title: 'AnhQuanDev MERN Stack Board',
     description: 'Pro MERN stack Course1',
     type: 'public', // 'private'
@@ -10,14 +10,14 @@ export const mockData = {
     columns: [
       {
         _id: 'column-id-01',
-        boardId: 'board-id-01',
+        boardId: 'board-id-01', //
         title: 'To Do Column 01',
         cardOrderIds: ['card-id-01', 'card-id-02', 'card-id-03', 'card-id-04', 'card-id-05', 'card-id-06', 'card-id-07'],
         cards: [
           {
             _id: 'card-id-01',
             boardId: 'board-id-01',
-            columnId: 'column-id-01',
+            columnId: 'column-id-01', //
             title: 'Title of card 01',
             description: 'Markdown Syntax',
             cover: 'http://bugnetproject.com/wp-content/uploads/2020/07/trello.jpg',

@@ -54,7 +54,7 @@ function AppBar() {
               '&:hover': { border: 'none' }
             }}
             variant="outlined"
-            startIcon={<LibraryAddIcon/>}>CREATE
+            startIcon={<LibraryAddIcon />}>CREATE
           </Button>
         </Box>
       </Box>
@@ -69,15 +69,17 @@ function AppBar() {
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
-                <SearchRoundedIcon sx={{ color: 'white' }}/>
+                <SearchRoundedIcon sx={{ color: 'white' }} />
               </InputAdornment>
             ),
             endAdornment: (
-              <CloseRoundedIcon
-                fontSize="small"
-                sx={{ color : searchValue ? 'white' : 'transparent', cursor: 'pointer' }}
-                onClick={() => setSearchValue('')}
-              />
+              <InputAdornment position="end">
+                <CloseRoundedIcon
+                  fontSize="small"
+                  sx={{ color: searchValue ? 'white' : 'transparent', cursor: 'pointer' }}
+                  onClick={() => setSearchValue('')}
+                />
+              </InputAdornment>
             )
           }}
           sx={{
@@ -91,12 +93,13 @@ function AppBar() {
               '&:hover fieldset': { borderColor: 'white' },
               '&.Mui-focused fieldset': { borderColor: 'white' }
             }
-          }}/>
+          }} />
+
         <ModeSelect />
 
         <Tooltip title="Notification">
           <Badge color="warning" variant="dot" sx={{ cursor: 'pointer' }} >
-            <NotificationsNoneIcon sx={{ color: 'white' }}/>
+            <NotificationsNoneIcon sx={{ color: 'white' }} />
           </Badge>
         </Tooltip>
 

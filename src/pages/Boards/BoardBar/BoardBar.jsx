@@ -45,47 +45,50 @@ function BoardBar({ board }) {
 
     }}>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
-        <Chip
-          sx={MENU_STYLES}
-          icon={<DashboardIcon />}
-          label={board?.title}
-          clickable
+        <Tooltip title={board?.description}>
+          <Chip
+            sx={MENU_STYLES}
+            icon={<DashboardIcon />}
+            label={board?.title}
+            clickable
           // {onClick={() => {}}}
-        />
+          />
+        </Tooltip >
         <Chip
           sx={MENU_STYLES}
           icon={<VpnLockIcon />}
           label={capitalizeFirstLetter(board?.type)}
           clickable
-          // {onClick={() => {}}}
+
         />
         <Chip
           sx={MENU_STYLES}
           icon={<AddToDriveIcon />}
           label="Add To Google Driver"
           clickable
-          // {onClick={() => {}}}
+
         />
         <Chip
           sx={MENU_STYLES}
           icon={<BoltIcon />}
           label="Automation"
           clickable
-          // {onClick={() => {}}}
+
         />
         <Chip
           sx={MENU_STYLES}
           icon={<FilterListIcon />}
           label="Filters"
           clickable
-          // {onClick={() => {}}}
+
         />
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
         <Button
           variant="outlined"
-          startIcon={<PersonAddIcon/>}
-          sx={{color: 'white',
+          startIcon={<PersonAddIcon />}
+          sx={{
+            color: 'white',
             borderColor: 'white',
             '&:hover': { borderColor: 'white' }
           }}
