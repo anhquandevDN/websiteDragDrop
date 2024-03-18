@@ -8,7 +8,7 @@ import { SortableContext, horizontalListSortingStrategy } from '@dnd-kit/sortabl
 import TextField from '@mui/material/TextField'
 import CloseRoundedIcon from '@mui/icons-material/CloseRounded'
 
-function ListColumns({ columns }) {
+function ListColumns({ columns, createNewColumn, createNewCard, deleteColumnDetails }) {
   //(tạo UI/UX cho column newcolum)false: mở, True: đóng
   const [openNewColumnForm, setOpenNewColumnForm] = useState(false)
   const toggleOpenNewColumnForm = () => setOpenNewColumnForm(!openNewColumnForm)
@@ -19,8 +19,15 @@ function ListColumns({ columns }) {
     if (!newColumnTitle) {
       toast.error('Pls enter Column Title!')
       return
-
     }
+
+    //Tạo dữ liệu Column để gọi API
+    const newColumnData = {
+      title: newColumnTitle
+    }
+    /*gọi lên props function createNewColumn nằm ỏ component cha cao nhất (boards/_id.jsx)
+    còn 1 cách xử lý là đưa dữ liệu Board ra ngoài Redux Global Store= thì lúc này chúng ta có thể gọi luôn API ở đây thay vì gọi ngược lên component cha phía trên*/
+    createNewColumn(newColumnData)
     // console.log(newColumnTitle)
     //gọi API
     //đóng trạng thái thêm Column mới & Clear Input
@@ -44,7 +51,11 @@ function ListColumns({ columns }) {
         '&::-webkit-scrollbar-track': { m: 2 }
 
       }}>
-        {columns?.map(column => <Column key={column._id} column={column} />)}
+        {columns?.map(column => <Column
+          key={column._id}
+          column={column}
+          createNewCard={ createNewCard }
+          deleteColumnDetails={deleteColumnDetails}/>)}
         {/* Add new column CTA, sử dụng toán tử 3 ngôi */}
         {!openNewColumnForm
           ? <Box onClick={toggleOpenNewColumnForm} sx={{
